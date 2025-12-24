@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import CardItems from "./carsItems";
+import CardItems from "./cardsItems";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -19,17 +19,27 @@ const Cards = ({ cardsItem }) => {
       rotationX: 45,
       scaleX: 0.8,
       z: -300,
-      delay:3,
-    })
-});
+      delay: 3,
+    });
+  });
 
-    return (
+  return (
+    <>
+      <div className="heading">
+        <h1>Features That Keep You Hooked!</h1>
+        <h3>Meet, Chat, Share – Anytime, Anywhere!</h3>
+      </div>
       <div className="cards-container">
         {cardsItem.map((item) => (
-            <CardItems cardsItem={cardsItem} itemHead={item.heading} itemPara={item.para} /> 
+          <CardItems
+            cardsItem={cardsItem}
+            itemHead={item.heading}
+            itemPara={item.para}
+          />
         ))}
       </div>
-    );
-}
+    </>
+  );
+};
 
 export default Cards;

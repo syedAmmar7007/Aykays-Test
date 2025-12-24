@@ -1,4 +1,4 @@
-const CardItems = ({cardsItem ,itemHead , itemPara}) => {
+const CardItems = ({cardsItem ,download,itemHead , itemPara}) => {
     return (
       <div className="cards">
         <h1>{itemHead}</h1>
