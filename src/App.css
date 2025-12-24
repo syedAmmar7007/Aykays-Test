@@ -53,16 +53,24 @@
   align-items: center;
   font-weight: 700;
   font-size: 16px;
+    background-color: #fff;
 }
 .text-container button:hover{
-  
-
+  color: #fff;
+  background-color: #dc423a;
+  transition: ease-in-out 0.5s;
+  box-shadow: 2px 2px 5px 0px ;
 }
 .banner{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 200px;
+}
+.cover{
+  display: flex;
+  width: 100%;
+
 }
 .mobile-img{
   width: 30%;
@@ -71,21 +79,23 @@
 
 .mobile-cover{
   flex-direction: row;
-  width: 85%;
-  height: 700px;
+  width: 80%;
+  /* height: 700px; */
   background-color: #121515;
   border: solid 5px #222222;
   margin-top: 60px;
   border-radius: 30px;
     box-shadow: 10px 20px 10px #00000033;  
     margin-bottom: 20px;
-
+  object-fit: cover;
 }
 .mobile-cover img{
   width: 93%;
   margin: 5px;
   border-radius: 7%;
-  height: 690px;
+  height: 98%;
+    object-fit: cover;
+
 }
 .vol-btn{
   background-color: #121515;
@@ -120,7 +130,7 @@
   align-content: center;
   font-size: 20px;
   font-weight: 600;
- margin-left: -280px; 
+ margin-left: -550px; 
  margin-top: 101px;
  box-shadow: 5px 20px 10px #00000033;  
 }
@@ -190,4 +200,54 @@ main{
   line-height: 1.5;
   text-align: center;
   padding: 0px 25px;
+}
+.circle{
+   display: flex;
+  width: 450px;
+  height: 450px;
+  background-color: #FF5349;
+  border-radius: 50%;
+  margin-top: 150px;
+  margin-left: 80px;
+}
+ .left-cover{
+  display: flex;
+  height:500px;
+  margin-left: -40px;
+}  
+.right-cover{
+  display: flex;
+  height:600px;
+  margin-left: -150px;
+  margin-top: -50px;
+} 
+.content-right{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 80px;
+  margin-left: 40px;
+}
+.content-right h1{
+  font-size: 55px;
+}
+.content-right p{
+  margin-top: 20px;
+  color: #525252;
+  font-weight:300;
+}
+.content-items{
+  margin-top: 20px;
+  gap: 50px;
+}
+.content-item{
+  width: 80%;
+  background-color: #F2F2F2;
+  box-shadow:2px 2px 4px 2px #00000033;  
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.content-item h1{
+  font-size: 20px;
 }

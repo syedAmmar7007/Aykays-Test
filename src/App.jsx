@@ -4,9 +4,25 @@ import gsap from "gsap";
 import Logo from "./component/logo";
 import Banner from "./component/banner";
 import Cards from "./component/card";
+import Content from "./component/content";
 
 function App() {
   let bannerImage = "../img/mobile.png";
+  let contentImage = "../img/right-img.png";
+  const contentItems = [
+    {
+      head: "🎥 Short Videos & Reels",
+      para: "Share engaging, bite-sized content that keeps everyone entertained.",
+    },
+    {
+      head: "🔔 Smart Notifications",
+      para: "Stay updated on what matters without the noise.",
+    },
+    {
+      head: "👥 Interest-Based Communities",
+      para: "Join groups and discussions that match your passion.",
+    },
+  ];
   let cardsItem = [
     {
       heading: "🔥 Seamless Connections",
@@ -55,6 +71,7 @@ function App() {
           <h3>Meet, Chat, Share – Anytime, Anywhere!</h3>
         </div>
         <Cards cardsItem={cardsItem}></Cards>
+        <Content contentItems={contentItems} />
       </main>
     </>
   );
